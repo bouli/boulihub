@@ -23,6 +23,16 @@ func GetDestiny(r *http.Request, forceWebSite string) destiny {
 	return getDestinies()[website_host(r.Host)][website_path(r.URL.Path)]
 }
 
+func GetFileDestiny(r *http.Request, forceWebSite string) destiny {
+	if forceWebSite != "" {
+		r.Host = forceWebSite
+	}
+	fmt.Println("host: " + website_host(r.Host))
+	fmt.Println("pattern: " + website_path(r.Pattern))
+
+	return getDestinies()[website_host(r.Host)][website_path(r.Pattern)]
+}
+
 func getDestinies() websites {
 	myMap := make(websites)
 	myMap["salviasupernova.com.br"] = make(map[website_path]destiny)
@@ -53,13 +63,19 @@ func getDestinies() websites {
 	myMap["littletalks.org"]["/"] = destiny{"redirect", "https://github.com/LittleTalksOrg"}
 
 	myMap["ohsanaworks.com"] = make(map[website_path]destiny)
-	myMap["ohsanaworks.com"]["/"] = destiny{"redirect", "https://www.instagram.com/ohsanaworks"}
+	myMap["ohsanaworks.com"]["/"] = destiny{"static", "ohsanaworks.com/index.html"}
+	myMap["ohsanaworks.com"]["/css/"] = destiny{"files", "ohsanaworks.com"}
+	myMap["ohsanaworks.com"]["/download/"] = destiny{"files", "ohsanaworks.com"}
+	myMap["ohsanaworks.com"]["/fonts/"] = destiny{"files", "ohsanaworks.com"}
+	myMap["ohsanaworks.com"]["/images/"] = destiny{"files", "ohsanaworks.com"}
+	myMap["ohsanaworks.com"]["/js/"] = destiny{"files", "ohsanaworks.com"}
 
 	myMap["cesarcardoso.cc"] = make(map[website_path]destiny)
 	myMap["cesarcardoso.cc"]["/"] = destiny{"static", "cesarcardoso.cc/index.html"}
 	myMap["cesarcardoso.cc"]["/lebenslauf"] = destiny{"static", "cesarcardoso.cc/resume/resume-for-web-de.html"}
 	myMap["cesarcardoso.cc"]["/cv"] = destiny{"static", "cesarcardoso.cc/resume/resume-for-web-en.html"}
 	myMap["cesarcardoso.cc"]["/qr"] = destiny{"static", "cesarcardoso.cc/qr.html"}
+	myMap["cesarcardoso.cc"]["/assets/"] = destiny{"files", "cesarcardoso.cc"}
 
 	myMap["cesarcardoso.cc"]["/resume"] = destiny{"redirect", "/cv"}
 	myMap["cesarcardoso.cc"]["/resume/en"] = destiny{"redirect", "/cv"}

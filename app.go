@@ -18,13 +18,22 @@ func main() {
 	flag.StringVar(&forceWebSite, "force-website", "", "force website")
 	flag.Parse()
 
+	get_static_files := func(w http.ResponseWriter, r *http.Request) {
+		destiny := routes.GetFileDestiny(r, forceWebSite)
+		fmt.Println(r.Pattern)
+		http.ServeFile(w, r, destiny.DestinyUrl+"/"+r.URL.Path)
+	}
 	fmt.Println(os.Args)
 	//TODO: Make it handled
 	fs := http.FileServer(http.Dir("static"))
 	http.Handle("/static/", http.StripPrefix("/static/", fs))
 
-	fs_assets := http.FileServer(http.Dir("cesarcardoso.cc/assets"))
-	http.Handle("/assets/", http.StripPrefix("/assets/", fs_assets))
+	http.HandleFunc("/css/", get_static_files)
+	http.HandleFunc("/download/", get_static_files)
+	http.HandleFunc("/fonts/", get_static_files)
+	http.HandleFunc("/js/", get_static_files)
+	http.HandleFunc("/images/", get_static_files)
+	http.HandleFunc("/assets/", get_static_files)
 
 	http.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
 		destiny := routes.GetDestiny(r, forceWebSite)
@@ -37,12 +46,9 @@ func main() {
 			main.Execute(w, models.GetTemplateData(r, destiny.DestinyUrl))
 			return
 		} else if destiny.DestinyType == "static" {
-			fmt.Println("im static")
 			http.ServeFile(w, r, destiny.DestinyUrl)
 			return
 		}
-
-		//w.WriteHeader(http.StatusNotFound)
 
 		http.Redirect(w, r, utils.GetHttpProtocolString(r)+"://"+r.Host, http.StatusNotFound)
 
