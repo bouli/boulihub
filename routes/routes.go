@@ -63,7 +63,8 @@ func getDestinies() websites {
 	myMap["littletalks.org"]["/"] = destiny{"redirect", "https://github.com/LittleTalksOrg"}
 
 	myMap["ohsanaworks.com"] = make(map[website_path]destiny)
-	myMap["ohsanaworks.com"]["/"] = destiny{"static", "ohsanaworks.com/index.html"}
+	//myMap["ohsanaworks.com"]["/"] = destiny{"static", "ohsanaworks.com/index.html"}
+	myMap["ohsanaworks.com"]["/"] = destiny{"redirect", "https://www.linkedin.com/company/ohsanaworks/"}
 	myMap["ohsanaworks.com"]["/css/"] = destiny{"files", "ohsanaworks.com"}
 	myMap["ohsanaworks.com"]["/download/"] = destiny{"files", "ohsanaworks.com"}
 	myMap["ohsanaworks.com"]["/fonts/"] = destiny{"files", "ohsanaworks.com"}
