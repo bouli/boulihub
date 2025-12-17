@@ -12,6 +12,8 @@ import (
 	"boulihub/utils"
 )
 
+const VERSION = "1.1.1"
+
 func main() {
 
 	var forceWebSite string
