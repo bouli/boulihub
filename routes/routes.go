@@ -77,6 +77,7 @@ func getDestinies() websites {
 	myMap["cesarcardoso.cc"]["/cv"] = destiny{"static", "cesarcardoso.cc/resume/resume-for-web-en.html"}
 	myMap["cesarcardoso.cc"]["/qr"] = destiny{"static", "cesarcardoso.cc/qr.html"}
 	myMap["cesarcardoso.cc"]["/assets/"] = destiny{"files", "cesarcardoso.cc"}
+	myMap["cesarcardoso.cc"]["/README/"] = destiny{"files", "cesarcardoso.cc"}
 
 	myMap["cesarcardoso.cc"]["/resume"] = destiny{"redirect", "/cv"}
 	myMap["cesarcardoso.cc"]["/resume/en"] = destiny{"redirect", "/cv"}

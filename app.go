@@ -36,6 +36,7 @@ func main() {
 	http.HandleFunc("/js/", get_static_files)
 	http.HandleFunc("/images/", get_static_files)
 	http.HandleFunc("/assets/", get_static_files)
+	http.HandleFunc("/README/", get_static_files)
 
 	http.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
 		destiny := routes.GetDestiny(r, forceWebSite)
