@@ -84,6 +84,12 @@ func getDestinies() websites {
 	myMap["cesarcardoso.cc"]["/en/cv"] = destiny{"redirect", "/cv"}
 	myMap["cesarcardoso.cc"]["/de/cv"] = destiny{"redirect", "/lebenslauf"}
 	myMap["cesarcardoso.cc"]["/resume/de"] = destiny{"redirect", "/lebenslauf"}
+	myMap["cesarcardoso.cc"]["/linkedin"] = destiny{"redirect", "https://www.linkedin.com/in/cesardesouzacardoso/"}
+	myMap["cesarcardoso.cc"]["/github"] = destiny{"redirect", "https://github.com/bouli"}
+	myMap["cesarcardoso.cc"]["/pypi"] = destiny{"redirect", "https://pypi.org/user/cesarbouli/"}
+	myMap["cesarcardoso.cc"]["/docker"] = destiny{"redirect", "https://hub.docker.com/u/cesarbouli"}
+	myMap["cesarcardoso.cc"]["/coursera"] = destiny{"redirect", "https://www.coursera.org/learner/cesarcardoso"}
+	myMap["cesarcardoso.cc"]["/music"] = destiny{"redirect", "https://cesarbouli.com/"}
 
 	return myMap
 }
