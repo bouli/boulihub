@@ -80,9 +80,6 @@ h1 + ul > li > a {
 h1 + ul > li:after {
     content: "  ";
 }
-h1 + ul > li:last-child:after {
-    content: "";
-}
 /* p immediately after contact list = summary */
 h1 + ul + p {
     margin: 1em 0;
@@ -187,6 +184,10 @@ img {
     }
 }
 
+.page-breaker {
+    display: none;
+}
+
 </style>
 </head>
 <body>
@@ -204,15 +205,23 @@ line. It is intended to be used for contact details -->
 <!-- The paragraph after the h1 and ul and before the first h2 is optional. It
 is intended to be used for a short summary. -->
 <p>Ich bin erfahrener <strong>Data Engineer</strong>, Webentwickler und Tech Lead mit über 17 Jahren Erfahrung in der Technologiebranche. Ich bin auf Datenstrategie, <strong>ETL</strong>, <strong>Datenorchestrierung</strong> und Monitoring spezialisiert. Dabei setze ich Tools wie <strong>GCP</strong> (Functions, <strong>BigQuery</strong>, Storage), <strong>SQL</strong> (<strong>Postgres</strong>, MySQL), NoSQL (<strong>MongoDB</strong>) und <strong>Python</strong> (<strong>PySpark</strong>, <strong>Pandas</strong>) ein, um die Datenqualität, -integrität und -zugänglichkeit sicherzustellen.</p>
-<h2>Persönlichkeitsentwicklung und Auswanderung</h2>
+<h2>Berufserfahrung</h2>
+<h3><span>Data Engineer Freiwilliger, <a href="https://ppa.org.br/">Parceiros Pela Amazônia - PPA</a> - <code>12.2025 - dato</code></span> <span><span> | </span>(remote)</span></h3>
+<ul>
+<li>Umwandlung von Datenerfassungsprozessen in strukturierte und stabile Datenpipelines; (dato)</li>
+</ul>
+<blockquote>
+<p>Tech stack: <code>GCP</code> (<code>Functions</code>, <code>BigQuery</code>, <code>Dataform</code>, <code>Looker</code>), <code>SQL</code> und <code>Python</code> (<code>Pandas</code>, <code>NumPy</code>).</p>
+</blockquote>
+<h3><span>Persönlichkeitsentwicklung und Auswanderung - <code>07.2024 - 09.2025</code> <em>(1 Jahr 2 Monaten)</em></span><span><span> | </span>Brasilien, Japan, Deutschland</span></h3>
 <p>Nach 17 Jahren Berufserfahrung in der Softwareentwicklung habe ich mir eine Zeit der persönlichen Weiterentwicklung gewidmet und neue Bereiche wie Audiotechnik und japanische Kultur erkundet, während ich mich auf meinen Umzug nach Deutschland vorbereitete.</p>
 <ul>
 <li><span>Vorbereitung auf das Visum <code>(Chancenkarte - § 20a AufenthG)</code> für und Umzug nach Deutschland - 02.2025 - 09.2025</span></li>
-<li><span>Deutschkurs am Goethe-Institut - Hamburg, Deutschland - 02.2025 - 03.2025</span></li>
+<li><span>Deutschkurs am Goethe-Institut Hamburg für das A2-Zertifikat - Hamburg, Deutschland - 02.2025 - 03.2025</span></li>
+<li><span>Data-Engineering-Kurse auf <a href="https://www.coursera.org/learner/cesarcardoso">Coursera</a> - 12.2024 - 01.2025</span></li>
 <li><span>Japanische Kultur- und Sprachkurs an der Akita Inaka Schule - Kosaka, Japan - 10.2024</span></li>
 <li><span>Kurs „Grundlagen der Tontechnik und digitale Mischpulte“ am IAV - Instituto de Áudio e Vídeo - São Paulo, Brasilien - 07.2024 - 08.2024</span></li>
 </ul>
-<h2>Berufserfahrung</h2>
 <!-- You have to wrap the "left" and "right" half of these headings in spans by
 hand -->
 <h3><span>Lead Data Engineer, <a href="https://laboratoria.la/">Laboratoria</a> - <code>07.2021 - 06.2024</code> <em>(3 Jahren)</em></span> <span><span> | </span>Lima, Perú (remote)</span></h3>
@@ -249,7 +258,7 @@ hand -->
 <blockquote>
 <p>Tech stack: <code>GCP</code>, <code>Python</code>, <code>PHP</code>, <code>Linux</code>, <code>Mysql</code>, <code>Wordpress</code>.</p>
 </blockquote>
-<h3><span>Project Manager, <a href="https://www.linkedin.com/company/alfaiataria-digital/posts/?feedView=all">Alfaiataria Digital</a> - <code>10.2024 - 04.2016</code> <em>(1 Jahr 7 Monate)</em></span> <span><span> | </span>São Paulo, Brazil</span></h3>
+<h3><span>Project Manager, <a href="https://www.linkedin.com/company/alfaiataria-digital/posts/?feedView=all">Alfaiataria Digital</a> - <code>10.2014 - 04.2016</code> <em>(1 Jahr 7 Monate)</em></span> <span><span> | </span>São Paulo, Brazil</span></h3>
 <!-- Thinking about say something about the place -->
 <ul>
 <li>KeyPlayer für die Optimierung von Online-Kampagnen, Leitung div. Technikteams für namhafte Kunden;</li>
@@ -335,7 +344,7 @@ hand -->
 <ul>
 <li>Portugiesisch: Muttersprachen | C2</li>
 <li>Englisch und Spanisch: Fließend | C1</li>
-<li>Deutsch, Französisch und Italienisch: Basis | A2 <em>(ich studiere derzeit Deutsch an der <code>Volkshochschule</code>)</em></li>
+<li>Deutsch, Französisch und Italienisch: Basis | A2</li>
 </ul>
 <h2>Weiterbildungen</h2>
 <h4><span>IBM - Hands-on Introduction to Linux Commands and Shell Scripting - <code>01.2025</code> <a href="https://www.coursera.org/account/accomplishments/verify/HVW8NUW0PBQY"><em>(Ansicht Zertifikat)</em></a></span></h4>

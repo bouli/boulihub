@@ -80,9 +80,6 @@ h1 + ul > li > a {
 h1 + ul > li:after {
     content: "  ";
 }
-h1 + ul > li:last-child:after {
-    content: "";
-}
 /* p immediately after contact list = summary */
 h1 + ul + p {
     margin: 1em 0;
@@ -187,6 +184,10 @@ img {
     }
 }
 
+.page-breaker {
+    display: none;
+}
+
 </style>
 </head>
 <body>
@@ -204,21 +205,24 @@ line. It is intended to be used for contact details -->
 <!-- The paragraph after the h1 and ul and before the first h2 is optional. It
 is intended to be used for a short summary. -->
 <p>I&rsquo;m a <strong>Data Engineer</strong>, Web Developer, and Tech Lead with 17+ years in tech, specializing in data strategy, <strong>ETL</strong>, <strong>orchestration</strong>, and monitoring. I use tools like <strong>GCP</strong> (Functions, <strong>BigQuery</strong>, Storage), <strong>SQL</strong> (<strong>Postgres</strong>, MySQL), NoSQL (<strong>MongoDB</strong>) and <strong>Python</strong> (<strong>PySpark</strong>, <strong>Pandas</strong>) to ensure data quality, integrity and accessibility.</p>
-<!-- I'm a __data engineer__, web developer, and tech lead with over 17 years of experience in the technology market. Deep expertise in __SQL__, __Python__, __GCP__ and modern web technologies. Since moving to Hamburg, I've been looking for a new challenge where I can leverage my technical expertise, leadership skills, and international experience. -->
-
-<h2>Personal Development and Relocation Preparation</h2>
+<h2>Experience</h2>
+<h3><span>Data Engineer Volunteer, <a href="https://ppa.org.br/">Parceiros Pela Amazônia - PPA</a> - <code>12.2025 - Now</code></span> <span><span> | </span>(remote)</span></h3>
+<ul>
+<li>Transforming data collection processes into structured and stable pipelines; (currently)</li>
+</ul>
+<blockquote>
+<p>Tech stack: <code>GCP</code> (<code>Functions</code>, <code>BigQuery</code>, <code>Dataform</code>, <code>Looker</code>), <code>SQL</code> und <code>Python</code> (<code>Pandas</code>, <code>NumPy</code>).</p>
+</blockquote>
+<h3><span>Personal Development and Relocation Preparation - <code>07.2024 - 09.2025</code> <em>(1 Year 2 Months)</em></span><span><span> | </span>Brazil, Japan, Germany</span></h3>
 <p>Following 17 years of professional experience in software development, I dedicated a period to personal growth, exploring new fields such as Audio Engineering and Japanese culture, while preparing for my relocation to Germany.</p>
 <ul>
 <li>Germany VISA <code>(Chancenkarte - § 20a AufenthG)</code> Preparation and Relocation | 02.2025 - 09.2025;</li>
-<li>German Studies in Goethe-Institut in Hamburg, Germany | 02.2025 - 03.2025;</li>
+<li>German Studies in Goethe-Institut in Hamburg for A2-Zertifikat, Germany | 02.2025 - 03.2025;</li>
+<li>Data Engineering Studies in <a href="https://www.coursera.org/learner/cesarcardoso">Coursera</a> | 12.2024 - 01.2025</li>
 <li>Japanese Culture and Language Studies in Kosaka, Japan | 10.2024;</li>
 <li>Audio Engineering Studies in São Paulo, Brazil | 07.2024 - 08.2024;</li>
 </ul>
-<h2>Experience</h2>
-<!-- You have to wrap the "left" and "right" half of these headings in spans by
-hand -->
 <h3><span>Lead Data Engineer, <a href="https://laboratoria.la/">Laboratoria</a> - <code>07.2021 - 06.2024</code> <em>(3 yrs)</em></span> <span><span> | </span>Lima, Perú (remote)</span></h3>
-<!-- Thinking about say something about the place -->
 <ul>
 <li>Transformed data collection processes into structured and stable pipelines, enhancing operational efficiency;</li>
 <li>Integrated multiple new data sources into the data lake, expanding the organization&rsquo;s data capabilities;</li>
@@ -229,7 +233,6 @@ hand -->
 <p>Tech stack: <code>GCP</code> (<code>Functions</code>, <code>BigQuery</code>, <code>Storage</code>, <code>Dataform</code>), <code>Docker</code>, <code>Postgres</code>, <code>Firebase</code>, <code>MongoDB</code>, <code>SQL</code> and <code>Python</code> (<code>Pandas</code>, <code>NumPy</code>, <code>PySpark</code>).</p>
 </blockquote>
 <h3><span>Lead Software Engineer, <a href="https://laboratoria.la/">Laboratoria</a> - <code>10.2018 - 07.2021</code> <em>(2 yrs 10 mos)</em></span> <span><span> | </span>Lima, Perú (remote)</span></h3>
-<!-- Thinking about say something about the place -->
 <ul>
 <li>Designed and managed teams to develop systems supporting the entire student journey, from application to graduation;</li>
 <li>Facilitated integration among stakeholders to achieve shared technical goals, enhancing collaboration;</li>
@@ -240,7 +243,6 @@ hand -->
 <p>Tech stack: <code>GCP</code>, <code>NodeJS</code>, <code>React</code>, <code>Docker</code>,<code>MongoDB</code> and <code>Firebase</code>.</p>
 </blockquote>
 <h3><span>IT Director, <a href="https://www.techo.org/">TECHO</a> - <code>06.2016 - 10.2018</code> <em>(2 yrs 5 mos)</em></span> <span><span> | </span>Santiago, Chile</span></h3>
-<!-- Thinking about say something about the place -->
 <ul>
 <li>Spearheaded technology strategy and systems management across 21 countries in Latin America, the Caribbean, and the USA;</li>
 <li>Designed a comprehensive 10-year digital transformation strategy for TECHO Internacional;</li>
@@ -251,8 +253,7 @@ hand -->
 <blockquote>
 <p>Tech stack: <code>GCP</code>, <code>Python</code>, <code>PHP</code>, <code>Linux</code>, <code>Mysql</code>, <code>Wordpress</code>.</p>
 </blockquote>
-<h3><span>Project Manager, <a href="https://www.linkedin.com/company/alfaiataria-digital/posts/?feedView=all">Alfaiataria Digital</a> - <code>10.2024 - 04.2016</code> <em>(1 yrs 7 mos)</em></span> <span><span> | </span>São Paulo, Brazil</span></h3>
-<!-- Thinking about say something about the place -->
+<h3><span>Project Manager, <a href="https://www.linkedin.com/company/alfaiataria-digital/posts/?feedView=all">Alfaiataria Digital</a> - <code>10.2014 - 04.2016</code> <em>(1 yrs 7 mos)</em></span> <span><span> | </span>São Paulo, Brazil</span></h3>
 <ul>
 <li>Played a pivotal role in optimizing online campaign processes and managing tech teams for high-profile clients;</li>
 <li>Improved campaign delivery time from 10 days to just 2 days, significantly enhancing operational efficiency for Jaguar Land Rover;</li>
@@ -263,15 +264,14 @@ hand -->
 <p>Tech stack: <code>PHP</code>, <code>MySQL</code>, <code>HTML5</code>, <code>Adobe Flash</code>, <code>Wordpress</code>, <code>Magento</code>, <code>GA4</code>.</p>
 </blockquote>
 <h3><span>Software Engineer, <a href="https://erpflex.com.br/">ERPFlex</a> - <code>08.2012 - 10.2024</code> <em>(2 yrs 3 mos)</em></span> <span><span> | </span>São Paulo, Brazil</span></h3>
-<!-- Thinking about say something about the place -->
 <ul>
 <li>ERP System development using PHP, Adobe Flex, MySql.</li>
 </ul>
 <blockquote>
-<p>Tech stack: <code>PHP</code>, <code>Adobe Flex</code>, <code>MySql</code>.</p>
+<p>Tech stack: <code>PHP</code>, <code>Adobe Flex</code>, <code>MySql</code>.
+<span class="page-breaker"></span></p>
 </blockquote>
 <h3><span>Software Engineer, <a href="https://www.linkedin.com/company/alfaiataria-digital/posts/?feedView=all">Alfaiataria Digital</a> - <code>02.2012 - 08.2012</code> <em>(7 mos)</em></span> <span><span> | </span>São Paulo, Brazil</span></h3>
-<!-- Thinking about say something about the place -->
 <ul>
 <li>System development using PHP, MySql, WordPress and FaceBook integration.</li>
 </ul>
@@ -279,7 +279,6 @@ hand -->
 <p>Tech stack: <code>PHP</code>, <code>MySql</code>, <code>Wordpress</code>.</p>
 </blockquote>
 <h3><span>IT Director (Co-Founer), <a href="https://www.incandescente.com.br/">Incandescente</a> - <code>07.2009 - 02.2012</code> <em>(2 yrs 8 mos)</em></span> <span><span> | </span>São Bernardo do Campo, Brazil</span></h3>
-<!-- Thinking about say something about the place -->
 <ul>
 <li>Responsible for technology strategy, product design and development.</li>
 </ul>
@@ -287,7 +286,6 @@ hand -->
 <p>Tech stack: <code>PHP</code>, <code>MySql</code>, <code>Adobe Flex</code>.</p>
 </blockquote>
 <h3><span>Software Engineer, <a href="https://www.rapp.com/">RAPP Brasil</a> - <code>08.2011 - 10.2011</code> <em>(3 mos)</em></span> <span><span> | </span>São Paulo, Brazil</span></h3>
-<!-- Thinking about say something about the place -->
 <ul>
 <li>System development using PHP, MySql, WordPress and FaceBook integration.</li>
 </ul>
@@ -295,7 +293,6 @@ hand -->
 <p>Tech stack: <code>PHP</code>, <code>MySql</code>, <code>Wordpress</code>.</p>
 </blockquote>
 <h3><span>Software Engineer, <a href="https://erpflex.com.br/">ERPFlex</a> - <code>01.2010 - 07.2011</code> <em>(1 yrs 7 mos)</em></span> <span><span> | </span>São Paulo, Brazil</span></h3>
-<!-- Thinking about say something about the place -->
 <ul>
 <li>ERP System development using PHP, Adobe Flex, MySql.</li>
 </ul>
@@ -303,7 +300,6 @@ hand -->
 <p>Tech stack: <code>PHP</code>, <code>Adobe Flex</code>, <code>MySql</code>.</p>
 </blockquote>
 <h3><span>Web Developer, <a href="https://www.clickpronto.com.br/">Click;Pronto</a> - <code>05.2008 - 12.2009</code> <em>(1 yrs 8 mos)</em></span> <span><span> | </span>Santo André, Brazil</span></h3>
-<!-- Thinking about say something about the place -->
 <ul>
 <li>ERP System development using PHP, ASP.NET, CSS, Javascript, Flash, Ajax, MySql, MS SQL Server.</li>
 </ul>
@@ -311,7 +307,6 @@ hand -->
 <p>Tech stack: <code>PHP</code>, <code>CSS</code>, <code>Javascript</code>, <code>Flash</code>, <code>Ajax</code>, <code>ASP.NET</code>, <code>MySql</code>, <code>MS SQL Server</code>.</p>
 </blockquote>
 <h3><span>Intern Programmer, <a href="https://oic.com.br/">OIC</a> - <code>01.2008 - 05.2008</code> <em>(5 mos)</em></span> <span><span> | </span>São Bernardo do Campo, Brazil</span></h3>
-<!-- Thinking about say something about the place -->
 <ul>
 <li>System development using ASP.NET, PHP, CSS, Javascript, Adobe Flash, Ajax, Oracle.</li>
 </ul>
@@ -319,7 +314,6 @@ hand -->
 <p>Tech stack: <code>ASP.NET</code>, <code>PHP</code>, <code>CSS</code>, <code>Javascript</code>, <code>Adobe Flash</code>, <code>Ajax</code>, <code>Oracle</code>.</p>
 </blockquote>
 <h3><span>Intern Web Designer, <a href="https://www.clickpronto.com.br/">Click;Pronto</a> - <code>06.2007 - 12.2007</code> <em>(7 mos)</em></span> <span><span> | </span>Santo André, Brazil</span></h3>
-<!-- Thinking about say something about the place -->
 <ul>
 <li>Website Designing, photo editing, web development using CMS Joomla, PHP, HTML, CSS, Javascript, Adobe Flash.</li>
 </ul>
@@ -337,7 +331,7 @@ hand -->
 <ul>
 <li>Brazilian Portuguese: Native | C2</li>
 <li>English and Spanish: Fluent | C1</li>
-<li>German, French and Italian: Basic | A2 <span><em>(currently studying German at the <code>Volkshochschule</code>)</em></span></li>
+<li>German, French and Italian: Basic | A2</li>
 </ul>
 <h2>Other courses</h2>
 <h4><span>IBM - Hands-on Introduction to Linux Commands and Shell Scripting - <code>01.2025</code> <a href="https://www.coursera.org/account/accomplishments/verify/HVW8NUW0PBQY"><em>(view certificate)</em></a></span></h4>
