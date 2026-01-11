@@ -1,4 +1,4 @@
-# bouli.com.br "Hub" Websites - v1.5.0
+# bouli.com.br "Hub" Websites - v1.5.1
 
 This repository is a simple generic webserver in GoLang for my domains.
 Some websites are onepage websites, with a very simple html structure,
