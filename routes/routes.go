@@ -91,5 +91,22 @@ func getDestinies() websites {
 	myMap["cesarcardoso.cc"]["/coursera"] = destiny{"redirect", "https://www.coursera.org/learner/cesarcardoso"}
 	myMap["cesarcardoso.cc"]["/music"] = destiny{"redirect", "https://cesarbouli.com/"}
 
+	myMap["tournow.xyz"] = make(map[website_path]destiny)
+	myMap["tournow.xyz"]["/"] = destiny{"static", "tournow.xyz/index.html"}
+	myMap["tournow.xyz"]["/index.html"] = destiny{"redirect", "/"}
+
+	myMap["tournow.xyz"]["/impressum.html"] = destiny{"redirect", "/impressum"}
+	myMap["tournow.xyz"]["/impressum"] = destiny{"static", "tournow.xyz/impressum.html"}
+
+	myMap["tournow.xyz"]["/datenschutz.html"] = destiny{"redirect", "/datenschutz"}
+	myMap["tournow.xyz"]["/datenschutz"] = destiny{"static", "tournow.xyz/datenschutz.html"}
+
+	myMap["tournow.xyz"]["/favicon.ico"] = destiny{"static", "tournow.xyz/favicon.ico"}
+	myMap["tournow.xyz"]["/css/"] = destiny{"files", "tournow.xyz"}
+	myMap["tournow.xyz"]["/download/"] = destiny{"files", "tournow.xyz"}
+	myMap["tournow.xyz"]["/fonts/"] = destiny{"files", "tournow.xyz"}
+	myMap["tournow.xyz"]["/images/"] = destiny{"files", "tournow.xyz"}
+	myMap["tournow.xyz"]["/js/"] = destiny{"files", "tournow.xyz"}
+
 	return myMap
 }
